@@ -6,16 +6,13 @@ import (
 )
 
 func main() {
-	// Zero values - 할당하지 않았을 때 기본적으로 가지고 있는 값
+	//var 64f float64  //error, must start with letter.
 	var f64 float64
-	var t bool
-	var s string
-	var i int
-	var i16 int16
+	// total_Price := 1000
+	// totalprice := 1000
+	totalPrice := 1000 //t는 소문자 될 수도 있고 대문자 될 수도 있다.
 
-	fmt.Println(f64, reflect.TypeOf(f64)) //수치형은 0
-	fmt.Println(t, reflect.TypeOf(t))     //false
-	fmt.Println(s, reflect.TypeOf(s))     //빈문자열
-	fmt.Println(i, reflect.TypeOf(i))
-	fmt.Println(i16, reflect.TypeOf(i16))
+	fmt.Println(totalPrice)
+	fmt.Println(f64, reflect.TypeOf(f64))
+
 }
