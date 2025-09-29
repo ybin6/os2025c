@@ -6,27 +6,16 @@ import (
 )
 
 func main() {
-	//var id int16
-	//var name string
-	//var gpa float32
+	// Zero values - 할당하지 않았을 때 기본적으로 가지고 있는 값
+	var f64 float64
+	var t bool
+	var s string
+	var i int
+	var i16 int16
 
-	//id = 999
-	//name = "Kim Inha"
-	//gpa = 3.99
-
-	// var id int16 = 999
-	// var name string = "Kim Inha"
-	// var gpa float32 = 3.99
-
-	// var id = 999
-	// var name = "Kim Inha"
-	// var gpa = 3.99
-
-	id := 999
-	name := "Kim Inha"
-	gpa := 3.99
-	//단축기호를 통한
-
-	fmt.Println("학번은", id, reflect.TypeOf(id), ", 이름은", name, reflect.TypeOf(name))
-	fmt.Println("평점 :", gpa, reflect.TypeOf(gpa))
+	fmt.Println(f64, reflect.TypeOf(f64)) //수치형은 0
+	fmt.Println(t, reflect.TypeOf(t))     //false
+	fmt.Println(s, reflect.TypeOf(s))     //빈문자열
+	fmt.Println(i, reflect.TypeOf(i))
+	fmt.Println(i16, reflect.TypeOf(i16))
 }
